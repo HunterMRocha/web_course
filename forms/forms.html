@@ -8,109 +8,114 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 	</head>
-	<body>
+	<body class='container-fluid'>
 		<!-- ------------------------------------------------------------------- -->
 		<!-- -------------------------Text Box Example-------------------------- -->
 		<!-- ------------------------------------------------------------------- -->
 		<h1>Form Examples</h1><hr>
-		<h2>Sign In (type=text)</h2>
+
+		<div class='container'>
+
+			<h2>Sign In (type=text)</h2>
+		
+			<form action="/forms/forms.html">
+				<label for="username">Username</label>
+				<input type="text" id="username" name="username" placeholder="username"><br><br>
 	
-		<form action="/forms/forms.html">
-			<label for="username">Username</label>
-			<input type="text" id="username" name="username" placeholder="username"><br><br>
-
-			<label for="password">Password</label>
-			<input type="password" id="pword" name="password" placeholder="password"><br>
-
-			<button type="submit">Sign In</button>
-		</form><hr>
-
-		<!-- ------------------------------------------------------------------- -->
-		<!-- -------------------------Radio Button Example---------------------- -->
-		<!-- ------------------------------------------------------------------- -->
-		<!-- Name= value needs to be the same in order to associate all radio buttons with each other -->
-		<!-- Value= is needed so when we submit we get our query in the search bar -->
-		<h2>Favorite Programming Language (type=radio)</h2>
-		<form>
-			<input type="radio" id="python" name="fav_lang" value="Python">
-			<label>Python</label><br>
-			<input type="radio" id="javascript" name="fav_lang" value="JavaScript">
-			<label>JavaScript</label><br>
-			<input type="radio" id="java" name="fav_lang" value="Java">
-			<label>Java</label><br>
-		</form><hr>
-
-		<!-- ------------------------------------------------------------------- -->
-		<!-- ------------------Different Actions Value Example------------------ -->
-		<!-- ------------------------------------------------------------------- -->
-		<h2>Hijacking Servers (using different action values)</h2>
-		<form action='https://www.reddit.com/search'>
-			<input type="text" name="q" placeholder="enter search value">
-			<button>Search Reddit</button>
-		</form>
-
-		<form action="https://www.google.com/search">
-			<input type="text" name="q" placeholder="enter search value">
-			<button>Search Google</button>
-		</form><hr>
-
-		<h2>Radio Buttons</h2>
-		<p>Select your Favorite Food:</p>
-
-
-		<!-- ------------------------------------------------------------------- -->
-		<!-- -------------------------Checkbox Example--------------------------- -->
-		<!-- ------------------------------------------------------------------- -->
-		<form action="forms/forms.html">
-			
-			<input type="checkbox" name="fav_food" id="Mexican" value="Mexican">
-			<label for="mex">Mexican</label><br>
-
-			<input type="checkbox" name="fav_food" id="American" value="American">
-			<label>American</label><br>
-
-			<input type="checkbox" name="fav_food" id="Chinese" value="Chinese">
-			<label>Chinese</label><br><br>
-
-			<button type="submit">Submit</button>
-		</form><hr>
-
-
-		<!-- ------------------------------------------------------------------- -->
-		<!-- ----------------------Select Dropdown Example---------------------- -->
-		<!-- ------------------------------------------------------------------- -->
-		<form action="form/forms.html">
-			<h2>Dropdown Select</h2>
-			<label for='lang'>Please Select Programming Experience Level</label><br>
-			<select name='xp' id='xp'>
-				<option value='Less than a year'>Less than a year</option>
-				<option value='1-3'>1-3 years</option>	
-				<option value='4-7'>4-7 years</option>
-				<option value='8+'>8+ years</option>	
-			<select>
-			<button type="submit">Submit</button>
-		</form> <hr>
-
-		<!-- ------------------------------------------------------------------- -->
-		<!-- ----------------------Range Example---------------------- -->
-		<!-- ------------------------------------------------------------------- -->
-		<h2>Range Example</h2>
-		<form action="forms/forms.html">
-			<label for='satification'>How Satisfied Were You?</label><br>
-			<input type="range" id='satification' name='satification' min=1 max=20>
-			<button type='submit'>Submit</button>
-		</form><hr>
-
-		<!-- ------------------------------------------------------------------- -->
-		<!-- ----------------------Text Area Example---------------------- -->
-		<!-- ------------------------------------------------------------------- -->
-		<h2>Text Area</h2>
-		<form action="forms/forms.html">
-			<label for='feedback'>Please Submit Feedback Below: </label><br>
-			<textarea id='feedback' name='feedback'
-					rows='5' cols='50' placeholder="Enter Feedback Here:"></textarea> <br>
-			<button type="submit">Submit</button>
-		</form>
+				<label for="password">Password</label>
+				<input type="password" id="pword" name="password" placeholder="password"><br>
+	
+				<button type="submit">Sign In</button>
+			</form><hr>
+	
+			<!-- ------------------------------------------------------------------- -->
+			<!-- -------------------------Radio Button Example---------------------- -->
+			<!-- ------------------------------------------------------------------- -->
+			<!-- Name= value needs to be the same in order to associate all radio buttons with each other -->
+			<!-- Value= is needed so when we submit we get our query in the search bar -->
+			<h2>Favorite Programming Language (type=radio)</h2>
+			<form>
+				<input type="radio" id="python" name="fav_lang" value="Python">
+				<label>Python</label><br>
+				<input type="radio" id="javascript" name="fav_lang" value="JavaScript">
+				<label>JavaScript</label><br>
+				<input type="radio" id="java" name="fav_lang" value="Java">
+				<label>Java</label><br>
+			</form><hr>
+	
+			<!-- ------------------------------------------------------------------- -->
+			<!-- ------------------Different Actions Value Example------------------ -->
+			<!-- ------------------------------------------------------------------- -->
+			<h2>Hijacking Servers (using different action values)</h2>
+			<form action='https://www.reddit.com/search'>
+				<input type="text" name="q" placeholder="enter search value">
+				<button>Search Reddit</button>
+			</form>
+	
+			<form action="https://www.google.com/search">
+				<input type="text" name="q" placeholder="enter search value">
+				<button>Search Google</button>
+			</form><hr>
+	
+			<h2>Radio Buttons</h2>
+			<p>Select your Favorite Food:</p>
+	
+	
+			<!-- ------------------------------------------------------------------- -->
+			<!-- -------------------------Checkbox Example--------------------------- -->
+			<!-- ------------------------------------------------------------------- -->
+			<form action="forms/forms.html">
+				
+				<input type="checkbox" name="fav_food" id="Mexican" value="Mexican">
+				<label for="mex">Mexican</label><br>
+	
+				<input type="checkbox" name="fav_food" id="American" value="American">
+				<label>American</label><br>
+	
+				<input type="checkbox" name="fav_food" id="Chinese" value="Chinese">
+				<label>Chinese</label><br><br>
+	
+				<button type="submit">Submit</button>
+			</form><hr>
+	
+	
+			<!-- ------------------------------------------------------------------- -->
+			<!-- ----------------------Select Dropdown Example---------------------- -->
+			<!-- ------------------------------------------------------------------- -->
+			<form action="form/forms.html">
+				<h2>Dropdown Select</h2>
+				<label for='lang'>Please Select Programming Experience Level</label><br>
+				<select name='xp' id='xp'>
+					<option value='Less than a year'>Less than a year</option>
+					<option value='1-3'>1-3 years</option>	
+					<option value='4-7'>4-7 years</option>
+					<option value='8+'>8+ years</option>	
+				<select>
+				<button type="submit">Submit</button>
+			</form> <hr>
+	
+			<!-- ------------------------------------------------------------------- -->
+			<!-- ----------------------Range Example---------------------- -->
+			<!-- ------------------------------------------------------------------- -->
+			<h2>Range Example</h2>
+			<form action="forms/forms.html">
+				<label for='satification'>How Satisfied Were You?</label><br>
+				<input type="range" id='satification' name='satification' min=1 max=20>
+				<button type='submit'>Submit</button>
+			</form><hr>
+	
+			<!-- ------------------------------------------------------------------- -->
+			<!-- ----------------------Text Area Example---------------------- -->
+			<!-- ------------------------------------------------------------------- -->
+			<h2>Text Area</h2>
+			<form action="forms/forms.html">
+				<label for='feedback'>Please Submit Feedback Below: </label><br>
+				<textarea id='feedback' name='feedback'
+						rows='5' cols='50' placeholder="Enter Feedback Here:"></textarea> <br>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
 	</body>
 </html>
