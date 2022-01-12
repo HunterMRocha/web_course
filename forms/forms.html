@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 	<head>
@@ -7,24 +7,26 @@
 		<title>Forms</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="">
+		<link rel="stylesheet" href="../css/style.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 	</head>
-	<body class='container-fluid'>
-		<!-- ------------------------------------------------------------------- -->
-		<!-- -------------------------Text Box Example-------------------------- -->
-		<!-- ------------------------------------------------------------------- -->
+	<body class='container-fluid background_color'>
+
+		
+
 		<h1>Form Examples</h1><hr>
 
-		<div class='container'>
-
+		<div class='container '>
+			<!-- ------------------------------------------------------------------- -->
+			<!-- -------------------------Text Box Example-------------------------- -->
+			<!-- ------------------------------------------------------------------- -->
 			<h2>Sign In (type=text)</h2>
 		
 			<form action="/forms/forms.html">
-				<label for="username">Username</label>
-				<input type="text" id="username" name="username" placeholder="username"><br><br>
+				<label for="username">Username:</label>
+				<input type="text" id="username" name="username" placeholder="username"><br>
 	
-				<label for="password">Password</label>
+				<label for="password">Password: </label>
 				<input type="password" id="pword" name="password" placeholder="password"><br>
 	
 				<button type="submit">Sign In</button>
@@ -36,13 +38,14 @@
 			<!-- Name= value needs to be the same in order to associate all radio buttons with each other -->
 			<!-- Value= is needed so when we submit we get our query in the search bar -->
 			<h2>Favorite Programming Language (type=radio)</h2>
-			<form>
+			<form action='forms/forms.html'>
 				<input type="radio" id="python" name="fav_lang" value="Python">
 				<label>Python</label><br>
 				<input type="radio" id="javascript" name="fav_lang" value="JavaScript">
 				<label>JavaScript</label><br>
 				<input type="radio" id="java" name="fav_lang" value="Java">
 				<label>Java</label><br>
+				<button type='submit'>Submit</button>
 			</form><hr>
 	
 			<!-- ------------------------------------------------------------------- -->
@@ -115,7 +118,23 @@
 				<textarea id='feedback' name='feedback'
 						rows='5' cols='50' placeholder="Enter Feedback Here:"></textarea> <br>
 				<button type="submit">Submit</button>
+			</form> <hr>
+
+			<!-- ------------------------------------------------------------------- -->
+			<!-- ----------------------Form ValidationExample---------------------- -->
+			<!-- ------------------------------------------------------------------- -->
+			<h2>Form Validation</h2>
+			<form>
+				<label for='email'>Enter Email:</label>
+				<input type="email" name="email" id="email" required><br>
+
+				<label for='password'>Enter Password:</label>
+				<input type="password" id='password' name='password' minlength="8" maxlength="18" required><br>
+
+				<button>Submit</button>
+
 			</form>
+
 		</div>
 	</body>
 </html>
